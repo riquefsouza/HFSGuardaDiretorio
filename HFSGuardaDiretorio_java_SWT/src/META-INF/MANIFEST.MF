@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: rsampaio
+Class-Path: . lib/swt.jar lib/sqlitejdbc-v056.jar lib/image4j.jar lib/swing2swt.jar lib/geotk-bundle-coverage-3.21.jar
+Created-By: Apache Maven
+Build-Jdk: 1.8.0
+Main-Class: hfsguardadir.HFSGuardaDiretorio
+
