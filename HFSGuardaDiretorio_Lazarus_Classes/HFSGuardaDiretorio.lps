@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="29">
+      <Unit0>
+        <Filename Value="HFSGuardaDiretorio.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="6"/>
+        <CursorPos X="59" Y="22"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uDiretorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uDiretorio"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="291"/>
+        <CursorPos Y="303"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="especifico\uListaAba.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uListaAba"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="13"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="uExtensao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uExtensao"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="3" Y="9"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="uRotinas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRotinas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="345"/>
+        <CursorPos X="19" Y="383"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="uPrincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPrincipal"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="1128"/>
+        <CursorPos X="3" Y="1130"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="uCadExtensao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCadExtensao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCadExtensao"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="35"/>
+        <CursorPos X="20" Y="49"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="uSplash.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="uSplash"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="57" Y="8"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="uArquivo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="25"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="uCompararDiretorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCompararDiretorio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCompararDiretorio"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="211"/>
+        <CursorPos X="66" Y="214"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="uDataModule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <CursorPos X="44" Y="3"/>
+        <UsageCount Value="25"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="uImportar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uImportar"/>
+        <EditorIndex Value="9"/>
+        <CursorPos X="3" Y="10"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="uImportarDiretorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="uImportarDiretorio"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="52"/>
+        <CursorPos X="65" Y="64"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="uSobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmSobre"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uSobre"/>
+        <EditorIndex Value="12"/>
+        <CursorPos Y="8"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="especifico\uListaDiretorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="25"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="especifico\uListaExtensao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="25"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="especifico\uListaImportar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="25"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="especifico\SQLiteTable3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="968"/>
+        <CursorPos X="9" Y="977"/>
+        <UsageCount Value="25"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="especifico\SQLite3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="25"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="especifico\sqlite3udf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="25"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="especifico\uAbaObjeto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uAbaObjeto"/>
+        <EditorIndex Value="10"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="especifico\uDiretorioObjeto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="25"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="especifico\uExtensaoObjeto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="25"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="especifico\uImportarObjeto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="25"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="uAba.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uAba"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="20" Y="8"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="uInfoDiretorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmInfoDiretorio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uInfoDiretorio"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="46"/>
+        <CursorPos X="65" Y="78"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="C:\lazarus\lcl\comctrls.pp"/>
+        <TopLine Value="1209"/>
+        <CursorPos X="20" Y="1222"/>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <TopLine Value="3163"/>
+        <CursorPos Y="3176"/>
+        <UsageCount Value="10"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="uInfoDiretorio.lfm"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit28>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="764" Column="36" TopLine="762"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uCompararDiretorio.pas"/>
+        <Caret Line="95" Column="65" TopLine="82"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uCompararDiretorio.pas"/>
+        <Caret Line="208" Column="49" TopLine="205"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="422" Column="53" TopLine="419"/>
+      </Position4>
+      <Position5>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="829" Column="36" TopLine="826"/>
+      </Position5>
+      <Position6>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="430" Column="53" TopLine="427"/>
+      </Position6>
+      <Position7>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="1245" Column="37" TopLine="1230"/>
+      </Position7>
+      <Position8>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="221" Column="58" TopLine="207"/>
+      </Position8>
+      <Position9>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="302" Column="10" TopLine="287"/>
+      </Position9>
+      <Position10>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="301" TopLine="278"/>
+      </Position10>
+      <Position11>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="766" Column="3" TopLine="763"/>
+      </Position11>
+      <Position12>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="1135" Column="21" TopLine="1119"/>
+      </Position12>
+      <Position13>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="1130" Column="22" TopLine="1122"/>
+      </Position13>
+      <Position14>
+        <Filename Value="uPrincipal.pas"/>
+      </Position14>
+      <Position15>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="34" Column="24" TopLine="13"/>
+      </Position15>
+      <Position16>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="292" Column="11" TopLine="280"/>
+      </Position16>
+      <Position17>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="767" Column="3" TopLine="764"/>
+      </Position17>
+      <Position18>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="1135" Column="20" TopLine="1124"/>
+      </Position18>
+      <Position19>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="194" Column="19" TopLine="181"/>
+      </Position19>
+      <Position20>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="292" Column="5" TopLine="284"/>
+      </Position20>
+      <Position21>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="767" Column="3" TopLine="763"/>
+      </Position21>
+      <Position22>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="135" Column="29" TopLine="123"/>
+      </Position22>
+      <Position23>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="768" Column="17" TopLine="747"/>
+      </Position23>
+      <Position24>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="776" Column="39" TopLine="767"/>
+      </Position24>
+      <Position25>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="135" Column="29" TopLine="123"/>
+      </Position25>
+      <Position26>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="768" Column="17" TopLine="747"/>
+      </Position26>
+      <Position27>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="776" Column="39" TopLine="770"/>
+      </Position27>
+      <Position28>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="166" Column="32" TopLine="154"/>
+      </Position28>
+      <Position29>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="782" Column="25" TopLine="761"/>
+      </Position29>
+      <Position30>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="884" Column="42" TopLine="881"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="HFSGuardaDiretorio"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="26">
+      <Unit0>
+        <Filename Value="HFSGuardaDiretorio.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uDiretorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uDiretorio"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="especifico\uListaAba.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uListaAba"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="uExtensao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uExtensao"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="uRotinas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRotinas"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="uPrincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPrincipal"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="uCadExtensao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCadExtensao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCadExtensao"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="uSplash.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="uSplash"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="uArquivo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="uCompararDiretorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmCompararDiretorio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCompararDiretorio"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="uDataModule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="uImportar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uImportar"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="uImportarDiretorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="uImportarDiretorio"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="uSobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmSobre"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uSobre"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="especifico\uListaDiretorio.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="especifico\uListaExtensao.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="especifico\uListaImportar.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="especifico\SQLiteTable3.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="especifico\SQLite3.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="especifico\sqlite3udf.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="especifico\uAbaObjeto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uAbaObjeto"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="especifico\uDiretorioObjeto.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="especifico\uExtensaoObjeto.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="especifico\uImportarObjeto.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="uAba.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uAba"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="uInfoDiretorio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmInfoDiretorio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uInfoDiretorio"/>
+      </Unit25>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="HFSGuardaDiretorio"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="especifico"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
