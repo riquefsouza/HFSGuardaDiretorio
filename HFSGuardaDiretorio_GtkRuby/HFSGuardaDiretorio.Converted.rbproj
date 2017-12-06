@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{EC210545-B0D7-4081-93C6-AC6A120B59B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HFSGuardaDiretorio</RootNamespace>
+    <AssemblyName>HFSGuardaDiretorio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MainFile>Program.rb</MainFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+    <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\SQLite\SQLiteNET\dinamico\sqlite-netFx40-binary-Win32-2010-1.0.97.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="catalogador\Catalogador.rb" />
+    <Compile Include="catalogador\RotuloRaiz.rb" />
+    <Compile Include="comum\ArquivoLog.rb" />
+    <Compile Include="comum\DiretorioXML.rb" />
+    <Compile Include="comum\ICatalogador.rb" />
+    <Compile Include="comum\IProgressoLog.rb" />
+    <Compile Include="comum\Log.rb" />
+    <Compile Include="comum\Progresso.rb" />
+    <Compile Include="comum\Rotinas.rb" />
+    <Compile Include="comum\StringList.rb" />
+    <Compile Include="comum\TipoExportar.rb" />
+    <Compile Include="comum\TipoExportarExtensao.rb" />
+    <Compile Include="gtk-gui\generated.rb" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmCadExtensao.rb" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmCompararDiretorio.rb" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmImportarDiretorio.rb" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmInfoDiretorio.rb" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmPrincipal.rb" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmSobre.rb" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmSplash.rb" />
+    <Compile Include="gui\FrmCadExtensao.rb" />
+    <Compile Include="gui\FrmCompararDiretorio.rb" />
+    <Compile Include="gui\FrmCompararDiretorioProgresso.rb" />
+    <Compile Include="gui\FrmImportarDiretorio.rb" />
+    <Compile Include="gui\FrmImportarDiretorioProgresso.rb" />
+    <Compile Include="gui\FrmInfoDiretorio.rb" />
+    <Compile Include="gui\FrmPrincipal.rb" />
+    <Compile Include="gui\FrmPrincipalProgresso.rb" />
+    <Compile Include="gui\FrmSobre.rb" />
+    <Compile Include="gui\FrmSplash.rb" />
+    <Compile Include="gui\FrmSplashProgresso.rb" />
+    <Compile Include="objetosbo\AbaBO.rb" />
+    <Compile Include="objetosbo\DiretorioBO.rb" />
+    <Compile Include="objetosbo\ExtensaoBO.rb" />
+    <Compile Include="objetosbo\ImportarBO.rb" />
+    <Compile Include="objetosdao\AbaDAO.rb" />
+    <Compile Include="objetosdao\DiretorioDAO.rb" />
+    <Compile Include="objetosdao\ExtensaoDAO.rb" />
+    <Compile Include="objetosdao\VisaoDAO.rb" />
+    <Compile Include="objetosgui\Arvore.rb" />
+    <Compile Include="objetosgui\Dialogo.rb" />
+    <Compile Include="objetosgui\EscolhaArquivo.rb" />
+    <Compile Include="objetosgui\Tabela.rb" />
+    <Compile Include="objetos\Aba.rb" />
+    <Compile Include="objetos\Arquivo.rb" />
+    <Compile Include="objetos\ConexaoParams.rb" />
+    <Compile Include="objetos\Diretorio.rb" />
+    <Compile Include="objetos\DiretorioOrdem.rb" />
+    <Compile Include="objetos\Extensao.rb" />
+    <Compile Include="objetos\Importar.rb" />
+    <Compile Include="objetos\Tipo.rb" />
+    <Compile Include="Program.rb" />
+    <Compile Include="Properties\AssemblyInfo.rb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="catalogador\" />
+    <Folder Include="comum\" />
+    <Folder Include="gui\" />
+    <Folder Include="objetosbo\" />
+    <Folder Include="objetosdao\" />
+    <Folder Include="objetosgui\" />
+    <Folder Include="objetos\" />
+  </ItemGroup>
+  <Target Name="Build" />
+</Project>
