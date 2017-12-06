@@ -1,0 +1,37 @@
+
+with "c:/gtkada/lib/gnat/gtkada.gpr";
+project Key_Button is
+
+   for Languages use ("Ada", "Project file");
+   for Exec_Dir use ".";
+   for Object_Dir use ".";
+   for Source_Dirs use (".");
+   for Main use ("Key_Button_Test.adb");
+
+   package Builder is
+      for Default_Switches ("ada") use ("-x", "-k", "-s");
+   end Builder;
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-gnato", "-g", "-gnatf", "-gnatE");
+   end Compiler;
+
+   package Binder is
+      for Default_Switches ("ada") use ("-static", "-E");
+   end Binder;
+
+   package Linker is
+      for Default_Switches ("ada") use ("-L/gtkada/include/gtkada", "-g");
+   end Linker;
+
+   package Naming is
+      for Specification_Suffix ("ada") use ".ads";
+      for Implementation_Suffix ("ada") use ".adb";
+      for Separate_Suffix use ".adb";
+      for Specification_Suffix ("project file") use ".gpr";
+      for Casing use "MixedCase";
+      for Dot_Replacement use "-";
+   end Naming;
+
+end Key_Button;
+

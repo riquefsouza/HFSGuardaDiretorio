@@ -1,0 +1,25 @@
+with "..\..\GtkAda\lib\gnat\gtkada.gpr";
+
+project HFSGuardaDiretorio is
+
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   for Exec_Dir use "bin";
+   for Main use ("HFSGuardaDiretorio.adb");
+   type Gtkada_Kind_Type is
+      ("static", "relocatable");
+   Library_Type : Gtkada_Kind_Type := external ("LIBRARY_TYPE");
+
+   case Library_Type is
+
+      when "static" =>
+         for Source_Files use ("FrmCadExtensao.adb", "FrmCadExtensao.ads", "FrmCompararDiretorio.adb", "FrmCompararDiretorio.ads", "FrmImportarDiretorio.adb", "FrmImportarDiretorio.ads", "FrmInfoDiretorio.adb", "FrmInfoDiretorio.ads", 
+            "FrmPrincipal.adb", "FrmPrincipal.ads", "FrmSobre.adb", "FrmSobre.ads", "FrmSplash.adb", "FrmSplash.ads", "HFSGuardaDiretorio.adb", "HFSGuardaDiretorio.ads", "MenuPopup.adb", "MenuPopup.ads", "Rotinas.adb", "Rotinas.ads");
+
+      when "relocatable" =>
+         for Source_Files use ("FrmCadExtensao.adb", "FrmCadExtensao.ads", "FrmCompararDiretorio.adb", "FrmCompararDiretorio.ads", "FrmImportarDiretorio.adb", "FrmImportarDiretorio.ads", "FrmInfoDiretorio.adb", "FrmInfoDiretorio.ads", 
+            "FrmPrincipal.adb", "FrmPrincipal.ads", "FrmSobre.adb", "FrmSobre.ads", "FrmSplash.adb", "FrmSplash.ads", "HFSGuardaDiretorio.adb", "HFSGuardaDiretorio.ads", "MenuPopup.adb", "MenuPopup.ads", "Rotinas.adb", "Rotinas.ads");
+   end case;
+
+end HFSGuardaDiretorio;
+
