@@ -1,0 +1,1 @@
+-IC:/gtk_2.24.10/include/gtk-2.0 -IC:/gtk_2.24.10/lib/gtk-2.0/include -IC:/gtk_2.24.10/include/atk-1.0 -IC:/gtk_2.24.10/include/cairo -IC:/gtk_2.24.10/include/gdk-pixbuf-2.0 -IC:/gtk_2.24.10/include/pango-1.0 -IC:/gtk_2.24.10/include/glib-2.0 -IC:/gtk_2.24.10/lib/glib-2.0/include -IC:/gtk_2.24.10/include -IC:/gtk_2.24.10/include/freetype2 -IC:/gtk_2.24.10/include/libpng14  

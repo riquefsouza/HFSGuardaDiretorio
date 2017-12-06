@@ -1,0 +1,17 @@
+C:\gtk_2.24.10\bin\pkg-config --cflags gtk+-2.0 --msvc-syntax > C:\andarDIR\HFSGuardaDiretorio_Gtk2_C\compilerflags_gtk2.txt
+C:\gtk_2.24.10\bin\pkg-config --libs gtk+-2.0 --msvc-syntax > C:\andarDIR\HFSGuardaDiretorio_Gtk2_C\linkerflags_gtk2.txt
+
+set GTK2 = C:\gtk_2.24.10
+
+PATH=C:\gtk_2.24.10\bin;%PATH%
+
+$(SolutionDir);.\GeneratedFiles;.;C:\gtk_2.24.10\include\gtk-2.0;C:\gtk_2.24.10\lib\gtk-2.0\include;C:\gtk_2.24.10\include\atk-1.0;C:\gtk_2.24.10\include\cairo;C:\gtk_2.24.10\include\gdk-pixbuf-2.0;C:\gtk_2.24.10\include\pango-1.0;C:\gtk_2.24.10\include\glib-2.0;C:\gtk_2.24.10\lib\glib-2.0\include;C:\gtk_2.24.10\include;C:\gtk_2.24.10\include\freetype2;C:\gtk_2.24.10\include\libpng14;%(AdditionalIncludeDirectories)
+
+
+C:\gtk_2.24.10\lib;%(AdditionalLibraryDirectories)
+
+gtk-win32-2.0.lib;gdk-win32-2.0.lib;atk-1.0.lib;gio-2.0.lib;pangowin32-1.0.lib;gdi32.lib;pangocairo-1.0.lib;gdk_pixbuf-2.0.lib;pango-1.0.lib;cairo.lib;gobject-2.0.lib;gmodule-2.0.lib;gthread-2.0.lib;glib-2.0.lib;intl.lib;kernel32.lib;user32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)
+
+/ENTRY:mainCRTStartup
+
+
