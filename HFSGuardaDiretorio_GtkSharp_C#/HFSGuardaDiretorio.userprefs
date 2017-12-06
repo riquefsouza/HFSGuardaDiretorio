@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="catalogador\Catalogador.cs">
+    <Files>
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="gui\FrmPrincipal.cs" Line="1" Column="1" />
+      <File FileName="objetosbo\ExtensaoBO.cs" Line="1" Column="1" />
+      <File FileName="gui\FrmCadExtensao.cs" Line="4" Column="4" />
+      <File FileName="comum\Rotinas.cs" Line="1" Column="1" />
+      <File FileName="objetosgui\Tabela.cs" Line="1" Column="1" />
+      <File FileName="catalogador\Catalogador.cs" Line="25" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

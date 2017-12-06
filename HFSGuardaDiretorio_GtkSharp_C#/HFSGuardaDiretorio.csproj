@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{98FF3267-7154-4D07-9E87-A0387D934AED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HFSGuardaDiretorio</RootNamespace>
+    <AssemblyName>HFSGuardaDiretorio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\SQLite\SQLiteNET\dinamico\sqlite-netFx40-binary-Win32-2010-1.0.97.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="gui\FrmCadExtensao.cs" />
+    <Compile Include="gui\FrmCompararDiretorio.cs" />
+    <Compile Include="gui\FrmImportarDiretorio.cs" />
+    <Compile Include="gui\FrmInfoDiretorio.cs" />
+    <Compile Include="gui\FrmPrincipal.cs" />
+    <Compile Include="gui\FrmSobre.cs" />
+    <Compile Include="gui\FrmSplash.cs" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmCadExtensao.cs" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmCompararDiretorio.cs" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmImportarDiretorio.cs" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmInfoDiretorio.cs" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmPrincipal.cs" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmSobre.cs" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmSplash.cs" />
+    <Compile Include="objetos\Aba.cs" />
+    <Compile Include="objetos\Arquivo.cs" />
+    <Compile Include="objetos\ConexaoParams.cs" />
+    <Compile Include="objetos\Diretorio.cs" />
+    <Compile Include="objetos\DiretorioOrdem.cs" />
+    <Compile Include="objetos\Extensao.cs" />
+    <Compile Include="objetos\Importar.cs" />
+    <Compile Include="objetos\Tipo.cs" />
+    <Compile Include="objetosdao\AbaDAO.cs" />
+    <Compile Include="objetosdao\DiretorioDAO.cs" />
+    <Compile Include="objetosdao\ExtensaoDAO.cs" />
+    <Compile Include="objetosdao\VisaoDAO.cs" />
+    <Compile Include="objetosbo\AbaBO.cs" />
+    <Compile Include="objetosbo\DiretorioBO.cs" />
+    <Compile Include="objetosbo\ExtensaoBO.cs" />
+    <Compile Include="objetosbo\ImportarBO.cs" />
+    <Compile Include="comum\ArquivoLog.cs" />
+    <Compile Include="comum\DiretorioXML.cs" />
+    <Compile Include="comum\ICatalogador.cs" />
+    <Compile Include="comum\IProgressoLog.cs" />
+    <Compile Include="comum\Log.cs" />
+    <Compile Include="comum\Progresso.cs" />
+    <Compile Include="comum\Rotinas.cs" />
+    <Compile Include="comum\StringList.cs" />
+    <Compile Include="comum\TipoExportar.cs" />
+    <Compile Include="comum\TipoExportarExtensao.cs" />
+    <Compile Include="catalogador\Catalogador.cs" />
+    <Compile Include="catalogador\RotuloRaiz.cs" />
+    <Compile Include="objetosgui\Arvore.cs" />
+    <Compile Include="objetosgui\Dialogo.cs" />
+    <Compile Include="objetosgui\Tabela.cs" />
+    <Compile Include="gui\FrmCompararDiretorioProgresso.cs" />
+    <Compile Include="gui\FrmImportarDiretorioProgresso.cs" />
+    <Compile Include="gui\FrmPrincipalProgresso.cs" />
+    <Compile Include="gui\FrmSplashProgresso.cs" />
+    <Compile Include="objetosgui\EscolhaArquivo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="gui\" />
+    <Folder Include="objetos\" />
+    <Folder Include="objetosdao\" />
+    <Folder Include="objetosbo\" />
+    <Folder Include="comum\" />
+    <Folder Include="catalogador\" />
+    <Folder Include="objetosgui\" />
+  </ItemGroup>
+</Project>
