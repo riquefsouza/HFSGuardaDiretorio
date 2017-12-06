@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hfsguardadir.gui.controller.FrmPrincipalController">
+   <center>
+      <SplitPane fx:id="spPesquisa" dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TabPane fx:id="tabPanel" layoutX="40.0" layoutY="-10.0" onScroll="#tabPanelScroll" prefHeight="190.0" prefWidth="886.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <contextMenu>
+                        <ContextMenu fx:id="menuPopup">
+                          <items>
+                            <MenuItem fx:id="menuInformacoesDiretorioArquivo" mnemonicParsing="false" onAction="#menuInformacoesDiretorioArquivoAction" text="Informações do Diretório / Arquivo" />
+                              <MenuItem fx:id="menuExcluirDiretorioSelecionado" mnemonicParsing="false" onAction="#menuExcluirDiretorioSelecionadoAction" text="Excluir Diretório Selecionado" />
+                              <MenuItem fx:id="menuExpandirDiretorios2" mnemonicParsing="false" onAction="#menuExpandirDiretorios2Action" text="Expandir Diretórios" />
+                              <MenuItem fx:id="menuColapsarDiretorios2" mnemonicParsing="false" onAction="#menuColapsarDiretorios2Action" text="Colapsar Diretórios" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="menuIncluirNovaAba2" mnemonicParsing="false" onAction="#menuIncluirNovaAba2Action" text="Incluir Nova Aba" />
+                              <MenuItem fx:id="menuAlterarNomeAbaAtiva2" mnemonicParsing="false" onAction="#menuAlterarNomeAbaAtiva2Action" text="Alterar Nome da Aba Ativa" />
+                              <MenuItem fx:id="menuExcluirAbaAtiva2" mnemonicParsing="false" onAction="#menuExcluirAbaAtiva2Action" text="Excluir Aba Ativa" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TabPane>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tabelaPesquisa" layoutX="149.0" layoutY="-5.0" prefHeight="190.0" prefWidth="886.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn prefWidth="300.0" text="Nome" />
+                      <TableColumn prefWidth="100.0" text="Tamanho" />
+                        <TableColumn prefWidth="70.0" text="Tipo" />
+                        <TableColumn prefWidth="120.0" text="Modificado" />
+                        <TableColumn prefWidth="90.0" text="Atributos" />
+                        <TableColumn prefWidth="300.0" text="Caminho" />
+                        <TableColumn prefWidth="150.0" text="Aba" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+   <top>
+      <VBox prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar id="barraMenu">
+              <menus>
+                <Menu id="menuAba" fx:id="menuAba" mnemonicParsing="false" text="Aba">
+                  <items>
+                        <MenuItem id="menuIncluirNovaAba" fx:id="menuIncluirNovaAba" mnemonicParsing="false" onAction="#menuIncluirNovaAbaAction" text="Incluir Nova Aba" />
+                    <MenuItem id="menuAlterarNomeAbaAtiva" fx:id="menuAlterarNomeAbaAtiva" mnemonicParsing="false" onAction="#menuAlterarNomeAbaAtivaAction" text="Alterar Nome da Aba Ativa" />
+                        <MenuItem id="menuExcluirAbaAtiva" fx:id="menuExcluirAbaAtiva" mnemonicParsing="false" onAction="#menuExcluirAbaAtivaAction" text="Excluir Aba Ativa" />
+                  </items>
+                </Menu>
+                <Menu id="menuDiretorio" fx:id="menuDiretorio" mnemonicParsing="false" text="Diretório">
+                  <items>
+                    <MenuItem id="menuImportarDiretorio" fx:id="menuImportarDiretorio" mnemonicParsing="false" onAction="#menuImportarDiretorioAction" text="Importar Diretório" />
+                        <MenuItem id="menuImportarSubDiretorios" fx:id="menuImportarSubDiretorios" mnemonicParsing="false" onAction="#menuImportarSubDiretoriosAction" text="Importar SubDiretórios" />
+                        <MenuItem id="menuCompararDiretorios" fx:id="menuCompararDiretorios" mnemonicParsing="false" onAction="#menuCompararDiretoriosAction" text="Comparar Diretórios" />
+                        <MenuItem id="menuCadastrarExtensaoArquivo" fx:id="menuCadastrarExtensaoArquivo" mnemonicParsing="false" onAction="#menuCadastrarExtensaoArquivoAction" text="Cadastrar Extensão de Arquivo" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem id="menuExpandirDiretorios" fx:id="menuExpandirDiretorios" mnemonicParsing="false" onAction="#menuExpandirDiretoriosAction" text="Expandir Diretórios" />
+                        <MenuItem id="menuColapsarDiretorios" fx:id="menuColapsarDiretorios" mnemonicParsing="false" onAction="#menuColapsarDiretoriosAction" text="Colapsar Diretórios" />
+                        <Menu id="menuExportarDiretoriosAbaAtiva" fx:id="menuExportarDiretoriosAbaAtiva" mnemonicParsing="false" text="Exportar Diretórios da Aba Ativa">
+                          <items>
+                            <MenuItem id="menuTXT" fx:id="menuTXT" mnemonicParsing="false" onAction="#menuTXTAction" text="TXT" />
+                              <MenuItem id="menuCSV" fx:id="menuCSV" mnemonicParsing="false" onAction="#menuCSVAction" text="CSV" />
+                              <MenuItem id="menuHTML" fx:id="menuHTML" mnemonicParsing="false" onAction="#menuHTMLAction" text="HTML" />
+                              <MenuItem id="menuXML" fx:id="menuXML" mnemonicParsing="false" onAction="#menuXMLAction" text="XML" />
+                              <MenuItem id="menuSQL" fx:id="menuSQL" mnemonicParsing="false" onAction="#menuSQLAction" text="SQL" />
+                          </items>
+                        </Menu>
+                        <MenuItem id="menuImportarDiretoriosViaXML" fx:id="menuImportarDiretoriosViaXML" mnemonicParsing="false" onAction="#menuImportarDiretoriosViaXMLAction" text="Importar Diretórios Via XML" />
+                        <CheckMenuItem id="menuGravarLogImportacao" fx:id="menuGravarLogImportacao" mnemonicParsing="false" onAction="#menuGravarLogImportacaoAction" text="Gravar Log da Importação" />
+                  </items>
+                </Menu>
+                <Menu id="menuVisao" fx:id="menuVisao" mnemonicParsing="false" text="Visão">
+                  <items>
+                    <MenuItem id="menuMostrarOcultarArvoreDirAbaAtiva" fx:id="menuMostrarOcultarArvoreDirAbaAtiva" mnemonicParsing="false" onAction="#menuMostrarOcultarArvoreDirAbaAtivaAction" text="Mostrar/Ocultar Árvore de diretórios da Aba Ativa" />
+                        <MenuItem id="menuMostrarOcultarListaItensPesquisados" fx:id="menuMostrarOcultarListaItensPesquisados" mnemonicParsing="false" onAction="#menuMostrarOcultarListaItensPesquisadosAction" text="Mostrar/Ocultar lista de itens pesquisados" />
+                  </items>
+                </Menu>
+                  <Menu id="menuIdioma" fx:id="menuIdioma" mnemonicParsing="false" text="Idioma">
+                    <items>
+                      <RadioMenuItem id="menuPortugues" fx:id="menuPortugues" mnemonicParsing="false" onAction="#menuPortuguesAction" selected="true" text="Português [Portuguese]" />
+                        <RadioMenuItem id="menuIngles" fx:id="menuIngles" mnemonicParsing="false" onAction="#menuInglesAction" text="Inglês [English]" />
+                        <RadioMenuItem id="menuEspanhol" fx:id="menuEspanhol" mnemonicParsing="false" onAction="#menuEspanholAction" text="Espanhol [Spanish]" />
+                        <RadioMenuItem id="menuFrances" fx:id="menuFrances" mnemonicParsing="false" onAction="#menuFrancesAction" text="Francês [French]" />
+                        <RadioMenuItem id="menuItaliano" fx:id="menuItaliano" mnemonicParsing="false" onAction="#menuItalianoAction" text="Italiano [Italian]" />
+                        <RadioMenuItem id="menuAlemao" fx:id="menuAlemao" mnemonicParsing="false" onAction="#menuAlemaoAction" text="Alemão [German]" />
+                        <RadioMenuItem id="menuJapones" fx:id="menuJapones" mnemonicParsing="false" onAction="#menuJaponesAction" text="Japonês [Japanese]" />
+                        <RadioMenuItem id="menuCoreano" fx:id="menuCoreano" mnemonicParsing="false" onAction="#menuCoreanoAction" text="Coreano [Korean]" />
+                        <RadioMenuItem id="menuChinesTradicional" fx:id="menuChinesTradicional" mnemonicParsing="false" onAction="#menuChinesTradicionalAction" text="Chinês Tradicional [Traditional Chinese]" />
+                    </items>
+                  </Menu>
+                  <Menu id="menuSobre" fx:id="menuSobre" mnemonicParsing="false" text="Sobre">
+                    <items>
+                      <MenuItem id="menuSobreCatalogador" fx:id="menuSobreCatalogador" mnemonicParsing="false" onAction="#menuSobreCatalogadorAction" text="Sobre o Catalogador" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar id="barraFerra" prefHeight="40.0" prefWidth="200.0">
+              <items>
+                <Button id="btnImportarDiretorio" fx:id="btnImportarDiretorio" mnemonicParsing="false" onAction="#btnImportarDiretorioAction" text="Importar Diretório" />
+                  <ProgressBar id="pb" fx:id="pb" prefWidth="385.0" progress="0.0" />
+                  <TextField id="edtPesquisa" fx:id="edtPesquisa" prefWidth="276.0" promptText="Digite aqui para pesquisar" />
+                  <Button id="btnPesquisa" fx:id="btnPesquisa" mnemonicParsing="false" onAction="#btnPesquisaAction" text="Pesquisar" />
+              </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="barraStatus1" fx:id="barraStatus1" prefWidth="300.0" style="-fx-border-width: 1; -fx-border-style: solid;" text="Quantidade Total: , Tamanho Total:" HBox.hgrow="NEVER" />
+            <Label id="barraStatus2" fx:id="barraStatus2" maxWidth="1.7976931348623157E308" style="-fx-border-width: 1; -fx-border-style: solid;" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

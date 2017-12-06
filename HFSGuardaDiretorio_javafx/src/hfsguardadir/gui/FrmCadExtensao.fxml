@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="274.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hfsguardadir.gui.controller.FrmCadExtensaoController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="menuExtensao" mnemonicParsing="false" text="Extensão">
+            <items>
+              <MenuItem fx:id="menuIncluirExtensao" mnemonicParsing="false" onAction="#menuIncluirExtensaoAction" text="Incluir Extensão" />
+                  <MenuItem fx:id="menuExcluirExtensao" mnemonicParsing="false" onAction="#menuExcluirExtensaoAction" text="Excluir Extensão" />
+                  <MenuItem fx:id="menuExcluirTodasExtensoes" mnemonicParsing="false" onAction="#menuExcluirTodasExtensoesAction" text="Excluir Todas Extensões" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuExportarTodos" mnemonicParsing="false" text="Exportar Todos">
+            <items>
+              <MenuItem fx:id="menuExportarBitmap" mnemonicParsing="false" onAction="#menuExportarBitmapAction" text="Exportar para Bitmap" />
+                  <MenuItem fx:id="menuExportarIcone" mnemonicParsing="false" onAction="#menuExportarIconeAction" text="Exportar para Ícone" />
+                  <MenuItem fx:id="menuExportarGIF" mnemonicParsing="false" onAction="#menuExportarGIFAction" text="Exportar para GIF" />
+                  <MenuItem fx:id="menuExportarJPEG" mnemonicParsing="false" onAction="#menuExportarJPEGAction" text="Exportar para JPEG" />
+                  <MenuItem fx:id="menuExportarPNG" mnemonicParsing="false" onAction="#menuExportarPNGAction" text="Exportar para PNG" />
+                  <MenuItem fx:id="menuExportarTIFF" mnemonicParsing="false" onAction="#menuExportarTIFFAction" text="Exportar para TIFF" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuImportarTodos" mnemonicParsing="false" text="Importar Todos">
+            <items>
+              <MenuItem fx:id="menuImportarIconesArquivos" mnemonicParsing="false" onAction="#menuImportarIconesArquivosAction" text="Importar Ícones dos Arquivos" />
+                  <MenuItem fx:id="menuExtrairIconesArquivos" mnemonicParsing="false" onAction="#menuExtrairIconesArquivosAction" text="Extrair Ícones dos Arquivos" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TableView fx:id="tabelaExtensao" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colunaExtensao" prefWidth="75.0" text="Extensão" />
+          <TableColumn fx:id="colunaIcone" prefWidth="75.0" text="Ícone" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="10.0" prefHeight="50.0" prefWidth="347.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnIncluir" mnemonicParsing="false" onAction="#btnIncluirAction" text="Incluir" />
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluirAction" text="Excluir" />
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>

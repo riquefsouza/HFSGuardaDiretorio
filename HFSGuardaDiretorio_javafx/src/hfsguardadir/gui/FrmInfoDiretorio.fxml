@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hfsguardadir.gui.controller.FrmInfoDiretorioController">
+   <top>
+      <TitledPane animated="false" collapsible="false" text="Legenda dos Atributos" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="labArquivoComum" text="[ARQ] - Arquivo comum" />
+                  <Label fx:id="labArquivoOculto" text="[HID] - Arquivo Oculto" GridPane.columnIndex="1" />
+                  <Label fx:id="labArquivoSistema" text="[SYS] - Arquivo de Sistema" GridPane.rowIndex="1" />
+                  <Label fx:id="labLegendaDiretorio" text="[DIR] - Diretório" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="labVolumeID" text="[VOL] - Volume ID" GridPane.rowIndex="2" />
+                  <Label fx:id="labArquivoSomenteLeitura" text="[ROL] - Arquivo Somente Leitura" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </content>
+      </TitledPane>
+   </top>
+   <center>
+      <TableView fx:id="tabelaInfo" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colunaItem" prefWidth="75.0" text="Item" />
+          <TableColumn fx:id="colunaDescricao" prefWidth="75.0" text="Descrição" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <Button fx:id="btnOk" mnemonicParsing="false" onAction="#btnOkAction" prefHeight="25.0" prefWidth="64.0" text="Ok" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>
