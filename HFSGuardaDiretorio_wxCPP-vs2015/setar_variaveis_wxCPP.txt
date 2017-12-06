@@ -1,0 +1,32 @@
+set WXWIN = C:\wxWidgets-3.0.2
+set WXSQLITE = C:\wxsqlite3-master
+
+
+# ---------- C/C++ --------------- #
+
+.\GeneratedFiles;.;$(WXSQLITE)\include;$(WXWIN)\lib\vc_lib\mswud;$(WXWIN)\include;%(AdditionalIncludeDirectories)
+
+_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;DEBUG;_DEBUG;WXUSINGLIB_WXSQLITE3;_UNICODE;__WXDEBUG__;__WXMSW__;%(PreprocessorDefinitions)
+
+
+
+/GS /analyze- /W3 /Zc:wchar_t /I"C:\wxsqlite3-master\include" /I"C:\wxWidgets-3.0.2\lib\vc_lib\mswud" /I"C:\wxWidgets-3.0.2\include" /ZI /Gm /Od /Fd"Debug\vc140.pdb" /Zc:inline /fp:precise /D "_WINDOWS" /D "_CRT_SECURE_NO_WARNINGS" /D "_CRT_SECURE_NO_DEPRECATE" /D "_CRT_NONSTDC_NO_DEPRECATE" /D "DEBUG" /D "_DEBUG" /D "WXUSINGLIB_WXSQLITE3" /D "_UNICODE" /D "__WXDEBUG__" /D "__WXMSW__" /D "UNICODE" /errorReport:prompt /WX- /Zc:forScope /RTC1 /Gd /Oy- /MDd /Fa"Debug\" /EHsc /nologo /Fo"Debug\" /Fp"Debug\HFSGuardaDiretorio.pch" 
+
+
+
+# ---------- LINKER --------------- #
+
+$(WXSQLITE)\lib\vc140_lib;$(WXSQLITE)\build30\bin\Win32\Debug;$(WXWIN)\lib\vc_lib;%(AdditionalLibraryDirectories)
+
+
+wxsqlite3d.lib;libsqlite3d.lib;wxbase30ud.lib;wxmsw30ud_richtext.lib;wxmsw30ud_aui.lib;wxmsw30ud_xrc.lib;wxmsw30ud_qa.lib;wxmsw30ud_html.lib;wxmsw30ud_adv.lib;wxmsw30ud_core.lib;wxbase30ud_xml.lib;wxbase30ud_net.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxtiffd.lib;wxexpatd.lib;wxregexud.lib;comctl32.lib;rpcrt4.lib;shell32.lib;gdi32.lib;kernel32.lib;user32.lib;comdlg32.lib;ole32.lib;oleaut32.lib;advapi32.lib;%(AdditionalDependencies)
+
+
+Windows (/SUBSYSTEM:WINDOWS)
+
+
+
+
+/OUT:"C:\andarDIR\HFSGuardaDiretorio_wxCPP\HFSGuardaDiretorio\Debug\HFSGuardaDiretorio.exe" /MANIFEST /NXCOMPAT /PDB:"C:\andarDIR\HFSGuardaDiretorio_wxCPP\HFSGuardaDiretorio\Debug\HFSGuardaDiretorio.pdb" /DYNAMICBASE "wxsqlite3d.lib" "libsqlite3d.lib" "wxbase30ud.lib" "wxmsw30ud_richtext.lib" "wxmsw30ud_aui.lib" "wxmsw30ud_xrc.lib" "wxmsw30ud_qa.lib" "wxmsw30ud_html.lib" "wxmsw30ud_adv.lib" "wxmsw30ud_core.lib" "wxbase30ud_xml.lib" "wxbase30ud_net.lib" "wxjpegd.lib" "wxpngd.lib" "wxzlibd.lib" "wxtiffd.lib" "wxexpatd.lib" "wxregexud.lib" "comctl32.lib" "rpcrt4.lib" "shell32.lib" "gdi32.lib" "kernel32.lib" "user32.lib" "comdlg32.lib" "ole32.lib" "oleaut32.lib" "advapi32.lib" "winspool.lib" "uuid.lib" "odbc32.lib" "odbccp32.lib" /DEBUG /MACHINE:X86 /INCREMENTAL /PGD:"C:\andarDIR\HFSGuardaDiretorio_wxCPP\HFSGuardaDiretorio\Debug\HFSGuardaDiretorio.pgd" /SUBSYSTEM:WINDOWS /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /ManifestFile:"Debug\HFSGuardaDiretorio.exe.intermediate.manifest" /ERRORREPORT:PROMPT /NOLOGO /LIBPATH:"C:\wxsqlite3-master\lib\vc140_lib" /LIBPATH:"C:\wxsqlite3-master\build30\bin\Win32\Debug" /LIBPATH:"C:\wxWidgets-3.0.2\lib\vc_lib" /TLBID:1 
+
+
