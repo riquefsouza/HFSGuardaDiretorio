@@ -1,0 +1,7 @@
+# ---------- CRIAR LIB FROM DLL --------------- #
+
+dumpbin /exports C:\andarDIR\HFSGuardaDiretorio_WIN32-vs2015\HFSGuardaDiretorio\Debug\sqlite3.dll /out:C:\andarDIR\HFSGuardaDiretorio_WIN32-vs2015\HFSGuardaDiretorio\Debug\sqlite3_def.txt
+
+lib /MACHINE:X86 /def:C:\andarDIR\HFSGuardaDiretorio_WIN32-vs2015\HFSGuardaDiretorio\Debug\sqlite3.def /OUT:C:\andarDIR\HFSGuardaDiretorio_WIN32-vs2015\HFSGuardaDiretorio\Debug\sqlite3.lib
+
+
