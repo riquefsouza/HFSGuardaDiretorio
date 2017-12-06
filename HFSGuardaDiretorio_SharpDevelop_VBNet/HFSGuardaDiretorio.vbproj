@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{A2D61FB2-4666-4BD7-849A-4EA755E869AC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HFSGuardaDiretorio</RootNamespace>
+    <AssemblyName>HFSGuardaDiretorio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <StartupObject>HFSGuardaDiretorio.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\SQLite\SQLiteNET\dinamico\sqlite-netFx40-binary-Win32-2010-1.0.97.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="catalogador\Catalogador.vb" />
+    <Compile Include="catalogador\RotuloRaiz.vb" />
+    <Compile Include="comum\ArquivoLog.vb" />
+    <Compile Include="comum\DiretorioXML.vb" />
+    <Compile Include="comum\ICatalogador.vb" />
+    <Compile Include="comum\IProgressoLog.vb" />
+    <Compile Include="comum\Log.vb" />
+    <Compile Include="comum\Progresso.vb" />
+    <Compile Include="comum\Rotinas.vb" />
+    <Compile Include="comum\StringList.vb" />
+    <Compile Include="comum\TipoExportar.vb" />
+    <Compile Include="comum\TipoExportarExtensao.vb" />
+    <Compile Include="gui\FrmCadExtensao.Designer.vb">
+      <DependentUpon>FrmCadExtensao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmCadExtensao.vb" />
+    <Compile Include="gui\FrmCompararDiretorio.Designer.vb">
+      <DependentUpon>FrmCompararDiretorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmCompararDiretorio.vb" />
+    <Compile Include="gui\FrmCompararDiretorioProgresso.vb" />
+    <Compile Include="gui\FrmImportarDiretorio.Designer.vb">
+      <DependentUpon>FrmImportarDiretorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmImportarDiretorio.vb" />
+    <Compile Include="gui\FrmImportarDiretorioProgresso.vb" />
+    <Compile Include="gui\FrmInfoDiretorio.Designer.vb">
+      <DependentUpon>FrmInfoDiretorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmInfoDiretorio.vb" />
+    <Compile Include="gui\FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmPrincipal.vb" />
+    <Compile Include="gui\FrmPrincipalProgresso.vb" />
+    <Compile Include="gui\FrmSobre.Designer.vb">
+      <DependentUpon>FrmSobre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmSobre.vb" />
+    <Compile Include="gui\FrmSplash.Designer.vb">
+      <DependentUpon>FrmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmSplash.vb" />
+    <Compile Include="gui\FrmSplashProgresso.vb" />
+    <Compile Include="objetosbo\AbaBO.vb" />
+    <Compile Include="objetosbo\DiretorioBO.vb" />
+    <Compile Include="objetosbo\ExtensaoBO.vb" />
+    <Compile Include="objetosbo\ImportarBO.vb" />
+    <Compile Include="objetosdao\AbaDAO.vb" />
+    <Compile Include="objetosdao\DiretorioDAO.vb" />
+    <Compile Include="objetosdao\ExtensaoDAO.vb" />
+    <Compile Include="objetosdao\VisaoDAO.vb" />
+    <Compile Include="objetosgui\Arvore.vb" />
+    <Compile Include="objetosgui\Dialogo.vb" />
+    <Compile Include="objetosgui\Tabela.vb" />
+    <Compile Include="objetosgui\TabelaItemComparer.vb" />
+    <Compile Include="objetos\Aba.vb" />
+    <Compile Include="objetos\Arquivo.vb" />
+    <Compile Include="objetos\ConexaoParams.vb" />
+    <Compile Include="objetos\Diretorio.vb" />
+    <Compile Include="objetos\DiretorioOrdem.vb" />
+    <Compile Include="objetos\Extensao.vb" />
+    <Compile Include="objetos\Importar.vb" />
+    <Compile Include="objetos\Tipo.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gui\FrmCadExtensao.resx">
+      <DependentUpon>FrmCadExtensao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmCompararDiretorio.resx">
+      <DependentUpon>FrmCompararDiretorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmImportarDiretorio.resx">
+      <DependentUpon>FrmImportarDiretorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmInfoDiretorio.resx">
+      <DependentUpon>FrmInfoDiretorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.Designer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmSobre.resx">
+      <DependentUpon>FrmSobre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmSplash.resx">
+      <DependentUpon>FrmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="catalogador" />
+    <Folder Include="comum" />
+    <Folder Include="gui" />
+    <Folder Include="objetos" />
+    <Folder Include="objetosbo" />
+    <Folder Include="objetosdao" />
+    <Folder Include="objetosgui" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
