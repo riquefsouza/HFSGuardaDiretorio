@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/10/29 13:41:24.000.058,=C:\Users\henrique.souza\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/29 13:41:40.000.370,C:\PROJETOS\HFSGuardaDiretorio\uPrincipal.dfm=C:\Users\henrique.souza\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2014/10/29 13:41:40.000.370,C:\PROJETOS\HFSGuardaDiretorio\uPrincipal.pas=C:\Users\henrique.souza\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/29 13:41:42.000.900,C:\PROJETOS\HFSGuardaDiretorio\HFSGuardaDiretorio.dproj=C:\Users\henrique.souza\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2014/10/29 16:34:08.000.007,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/10/29 16:34:16.000.369,C:\PROJETOS\HFSGuardaDiretorio\uDataModule.pas=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/10/29 16:34:16.000.369,C:\PROJETOS\HFSGuardaDiretorio\uDataModule.dfm=C:\PROJETOS\HFSGuardaDiretorio\Unit1.dfm</Transaction>
+    <Transaction>2014/10/29 17:16:52.000.077,=C:\PROJETOS\HFSGuardaDiretorio\UBigIntsForFloatV4.pas</Transaction>
+    <Transaction>2014/10/29 17:16:52.000.066,=C:\PROJETOS\HFSGuardaDiretorio\ubigFloatV3.pas</Transaction>
+    <Transaction>2014/10/29 17:21:28.000.322,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/10/29 17:21:36.000.680,C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas=C:\PROJETOS\HFSGuardaDiretorio\uRotinas.pas</Transaction>
+    <Transaction>2014/11/04 14:00:38.000.175,=C:\PROJETOS\HFSGuardaDiretorio\FEscolherDir.pas</Transaction>
+    <Transaction>2014/11/04 15:57:56.000.860,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/04 15:58:05.000.441,C:\PROJETOS\HFSGuardaDiretorio\uImportar.dfm=C:\PROJETOS\HFSGuardaDiretorio\Unit1.dfm</Transaction>
+    <Transaction>2014/11/04 15:58:05.000.441,C:\PROJETOS\HFSGuardaDiretorio\uImportar.pas=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/06 11:11:31.000.160,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/06 11:11:41.000.327,C:\PROJETOS\HFSGuardaDiretorio\uSobre.pas=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/06 11:11:41.000.327,C:\PROJETOS\HFSGuardaDiretorio\uSobre.dfm=C:\PROJETOS\HFSGuardaDiretorio\Unit1.dfm</Transaction>
+    <Transaction>2014/11/06 14:07:02.000.895,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/06 14:07:12.000.720,C:\PROJETOS\HFSGuardaDiretorio\uCadExtensao.pas=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/06 14:07:12.000.720,C:\PROJETOS\HFSGuardaDiretorio\uCadExtensao.dfm=C:\PROJETOS\HFSGuardaDiretorio\Unit1.dfm</Transaction>
+    <Transaction>2014/11/07 10:11:54.000.414,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/07 10:22:10.000.603,C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas=C:\PROJETOS\HFSGuardaDiretorio\uSplash.pas</Transaction>
+    <Transaction>2014/11/07 10:22:10.000.603,C:\PROJETOS\HFSGuardaDiretorio\Unit1.dfm=C:\PROJETOS\HFSGuardaDiretorio\uSplash.dfm</Transaction>
+    <Transaction>2014/11/11 13:57:13.000.774,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/11 13:57:22.000.351,C:\PROJETOS\HFSGuardaDiretorio\uDiretorio.pas=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/11 13:57:26.000.864,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/11 13:57:31.000.899,C:\PROJETOS\HFSGuardaDiretorio\uAba.pas=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/11 13:57:35.000.649,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/11 13:57:41.000.430,C:\PROJETOS\HFSGuardaDiretorio\uArquivo.pas=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/11 13:57:48.000.071,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/11 13:57:53.000.172,C:\PROJETOS\HFSGuardaDiretorio\uExtensao.pas=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/11 13:58:00.000.596,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/11 13:58:08.000.661,C:\PROJETOS\HFSGuardaDiretorio\uCatalogo.pas=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/12 17:45:19.000.943,C:\PROJETOS\HFSGuardaDiretorio\uCatalogo.pas=</Transaction>
+    <Transaction>2014/11/12 17:45:43.000.170,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/12 17:46:23.000.345,C:\PROJETOS\HFSGuardaDiretorio\uImportarDiretorio.pas=C:\PROJETOS\HFSGuardaDiretorio\uImportar.pas</Transaction>
+    <Transaction>2014/11/12 17:46:23.000.345,C:\PROJETOS\HFSGuardaDiretorio\uImportarDiretorio.dfm=C:\PROJETOS\HFSGuardaDiretorio\uImportar.dfm</Transaction>
+    <Transaction>2014/11/12 17:46:41.000.973,C:\PROJETOS\HFSGuardaDiretorio\uImportar.pas=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/13 09:49:06.000.170,=C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas</Transaction>
+    <Transaction>2014/11/13 09:49:33.000.436,C:\PROJETOS\HFSGuardaDiretorio\Unit1.pas=C:\PROJETOS\HFSGuardaDiretorio\uCompararDiretorio.pas</Transaction>
+    <Transaction>2014/11/13 09:49:33.000.436,C:\PROJETOS\HFSGuardaDiretorio\Unit1.dfm=C:\PROJETOS\HFSGuardaDiretorio\uCompararDiretorio.dfm</Transaction>
+    <Transaction>2014/11/14 11:13:05.000.127,=C:\PROJETOS\HFSGuardaDiretorio_DelphiXE7\Bmp2tiff.pas</Transaction>
+    <Transaction>2014/11/19 09:46:18.000.424,C:\PROJETOS\HFSGuardaDiretorio_DelphiXE7\ubigFloatV3.pas=</Transaction>
+    <Transaction>2014/11/19 09:46:18.000.362,C:\PROJETOS\HFSGuardaDiretorio_DelphiXE7\UBigIntsForFloatV4.pas=</Transaction>
+    <Transaction>2014/11/25 15:11:57.000.014,c:\projetos\hfsguardadiretorio_delphixe7\FEscolherDir.pas=c:\projetos\hfsguardadiretorio_delphixe7\uEscolherDir.pas</Transaction>
+    <Transaction>2014/11/25 15:11:57.000.014,c:\projetos\hfsguardadiretorio_delphixe7\FEscolherDir.dfm=c:\projetos\hfsguardadiretorio_delphixe7\uEscolherDir.dfm</Transaction>
+    <Transaction>2014/12/02 09:45:26.000.297,=C:\PROJETOS\HFSGuardaDiretorio_DelphiXE7\Unit1.pas</Transaction>
+    <Transaction>2014/12/02 09:46:54.000.634,C:\PROJETOS\HFSGuardaDiretorio_DelphiXE7\uInfoDiretorio.dfm=C:\PROJETOS\HFSGuardaDiretorio_DelphiXE7\Unit1.dfm</Transaction>
+    <Transaction>2014/12/02 09:46:54.000.634,C:\PROJETOS\HFSGuardaDiretorio_DelphiXE7\uInfoDiretorio.pas=C:\PROJETOS\HFSGuardaDiretorio_DelphiXE7\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
