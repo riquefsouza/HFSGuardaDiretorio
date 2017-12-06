@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{531E727B-2436-4A0C-9E55-2FE9FBC67876}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <RootNamespace>HFSGuardaDiretorio</RootNamespace>
+    <AssemblyName>HFSGuardaDiretorio</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputType>WinExe</OutputType>
+    <MainFile>Program.py</MainFile>
+    <DebugInfo>True</DebugInfo>
+    <StartArguments>-X:Debug Program.py</StartArguments>
+    <StartWorkingDirectory>.\</StartWorkingDirectory>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files (x86)\SharpDevelop\4.4\bin\..\AddIns\BackendBindings\PythonBinding\ipy.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <OutputType>WinExe</OutputType>
+    <MainFile>Program.py</MainFile>
+    <StartArguments>Program.py</StartArguments>
+    <StartWorkingDirectory>.\</StartWorkingDirectory>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files (x86)\SharpDevelop\4.4\bin\..\AddIns\BackendBindings\PythonBinding\ipy.exe</StartProgram>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronPython">
+      <HintPath>C:\Program Files %28x86%29\SharpDevelop\4.4\bin\..\AddIns\BackendBindings\PythonBinding\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules">
+      <HintPath>C:\Program Files %28x86%29\SharpDevelop\4.4\bin\..\AddIns\BackendBindings\PythonBinding\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\SQLite\SQLiteNET\dinamico\sqlite-netFx40-binary-Win32-2010-1.0.97.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="catalogador\Catalogador.py" />
+    <Compile Include="catalogador\RotuloRaiz.py" />
+    <Compile Include="catalogador\__init__.py" />
+    <Compile Include="comum\ArquivoLog.py" />
+    <Compile Include="comum\DiretorioXML.py" />
+    <Compile Include="comum\ICatalogador.py" />
+    <Compile Include="comum\IProgressoLog.py" />
+    <Compile Include="comum\Log.py" />
+    <Compile Include="comum\Progresso.py" />
+    <Compile Include="comum\Rotinas.py" />
+    <Compile Include="comum\StringList.py" />
+    <Compile Include="comum\TipoExportar.py" />
+    <Compile Include="comum\TipoExportarExtensao.py" />
+    <Compile Include="comum\__init__.py" />
+    <Compile Include="gui\FrmCadExtensao.py" />
+    <Compile Include="gui\FrmCompararDiretorio.py" />
+    <Compile Include="gui\FrmCompararDiretorioProgresso.py" />
+    <Compile Include="gui\FrmImportarDiretorio.py" />
+    <Compile Include="gui\FrmImportarDiretorioProgresso.py" />
+    <Compile Include="gui\FrmInfoDiretorio.py" />
+    <Compile Include="gui\FrmPrincipal.py" />
+    <Compile Include="gui\FrmPrincipalProgresso.py" />
+    <Compile Include="gui\FrmSobre.py" />
+    <Compile Include="gui\FrmSplash.py" />
+    <Compile Include="gui\FrmSplashProgresso.py" />
+    <Compile Include="gui\__init__.py" />
+    <Compile Include="objetosbo\AbaBO.py" />
+    <Compile Include="objetosbo\DiretorioBO.py" />
+    <Compile Include="objetosbo\ExtensaoBO.py" />
+    <Compile Include="objetosbo\ImportarBO.py" />
+    <Compile Include="objetosbo\__init__.py" />
+    <Compile Include="objetosdao\AbaDAO.py" />
+    <Compile Include="objetosdao\DiretorioDAO.py" />
+    <Compile Include="objetosdao\ExtensaoDAO.py" />
+    <Compile Include="objetosdao\VisaoDAO.py" />
+    <Compile Include="objetosdao\__init__.py" />
+    <Compile Include="objetosgui\Arvore.py" />
+    <Compile Include="objetosgui\Dialogo.py" />
+    <Compile Include="objetosgui\Tabela.py" />
+    <Compile Include="objetosgui\TabelaItemComparer.py" />
+    <Compile Include="objetosgui\__init__.py" />
+    <Compile Include="objetos\Aba.py" />
+    <Compile Include="objetos\Arquivo.py" />
+    <Compile Include="objetos\ConexaoParams.py" />
+    <Compile Include="objetos\Diretorio.py" />
+    <Compile Include="objetos\DiretorioOrdem.py" />
+    <Compile Include="objetos\Extensao.py" />
+    <Compile Include="objetos\Importar.py" />
+    <Compile Include="objetos\Tipo.py" />
+    <Compile Include="objetos\__init__.py" />
+    <Compile Include="Program.py" />
+    <Compile Include="Properties\AssemblyInfo.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="catalogador" />
+    <Folder Include="comum" />
+    <Folder Include="gui" />
+    <Folder Include="objetos" />
+    <Folder Include="objetosbo" />
+    <Folder Include="objetosdao" />
+    <Folder Include="objetosgui" />
+  </ItemGroup>
+  <Import Project="$(PythonBinPath)\SharpDevelop.Build.Python.targets" />
+</Project>
