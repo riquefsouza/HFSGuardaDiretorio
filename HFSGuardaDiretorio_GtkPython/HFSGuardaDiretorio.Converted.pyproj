@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6D5E2E50-A4FA-4CD4-BCBD-2FF36201AB27}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HFSGuardaDiretorio</RootNamespace>
+    <AssemblyName>HFSGuardaDiretorio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MainFile>Program.py</MainFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="IronPython">
+      <HintPath>$(PythonBinPath)\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+    <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\SQLite\SQLiteNET\dinamico\sqlite-netFx40-binary-Win32-2010-1.0.97.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="catalogador\Catalogador.py" />
+    <Compile Include="catalogador\RotuloRaiz.py" />
+    <Compile Include="comum\ArquivoLog.py" />
+    <Compile Include="comum\DiretorioXML.py" />
+    <Compile Include="comum\ICatalogador.py" />
+    <Compile Include="comum\IProgressoLog.py" />
+    <Compile Include="comum\Log.py" />
+    <Compile Include="comum\Progresso.py" />
+    <Compile Include="comum\Rotinas.py" />
+    <Compile Include="comum\StringList.py" />
+    <Compile Include="comum\TipoExportar.py" />
+    <Compile Include="comum\TipoExportarExtensao.py" />
+    <Compile Include="gtk-gui\generated.py" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmCadExtensao.py" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmCompararDiretorio.py" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmImportarDiretorio.py" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmInfoDiretorio.py" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmPrincipal.py" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmSobre.py" />
+    <Compile Include="gtk-gui\HFSGuardaDiretorio.gui.FrmSplash.py" />
+    <Compile Include="gui\FrmCadExtensao.py" />
+    <Compile Include="gui\FrmCompararDiretorio.py" />
+    <Compile Include="gui\FrmCompararDiretorioProgresso.py" />
+    <Compile Include="gui\FrmImportarDiretorio.py" />
+    <Compile Include="gui\FrmImportarDiretorioProgresso.py" />
+    <Compile Include="gui\FrmInfoDiretorio.py" />
+    <Compile Include="gui\FrmPrincipal.py" />
+    <Compile Include="gui\FrmPrincipalProgresso.py" />
+    <Compile Include="gui\FrmSobre.py" />
+    <Compile Include="gui\FrmSplash.py" />
+    <Compile Include="gui\FrmSplashProgresso.py" />
+    <Compile Include="objetosbo\AbaBO.py" />
+    <Compile Include="objetosbo\DiretorioBO.py" />
+    <Compile Include="objetosbo\ExtensaoBO.py" />
+    <Compile Include="objetosbo\ImportarBO.py" />
+    <Compile Include="objetosdao\AbaDAO.py" />
+    <Compile Include="objetosdao\DiretorioDAO.py" />
+    <Compile Include="objetosdao\ExtensaoDAO.py" />
+    <Compile Include="objetosdao\VisaoDAO.py" />
+    <Compile Include="objetosgui\Arvore.py" />
+    <Compile Include="objetosgui\Dialogo.py" />
+    <Compile Include="objetosgui\EscolhaArquivo.py" />
+    <Compile Include="objetosgui\Tabela.py" />
+    <Compile Include="objetos\Aba.py" />
+    <Compile Include="objetos\Arquivo.py" />
+    <Compile Include="objetos\ConexaoParams.py" />
+    <Compile Include="objetos\Diretorio.py" />
+    <Compile Include="objetos\DiretorioOrdem.py" />
+    <Compile Include="objetos\Extensao.py" />
+    <Compile Include="objetos\Importar.py" />
+    <Compile Include="objetos\Tipo.py" />
+    <Compile Include="Program.py" />
+    <Compile Include="Properties\AssemblyInfo.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="catalogador\" />
+    <Folder Include="comum\" />
+    <Folder Include="gui\" />
+    <Folder Include="objetosbo\" />
+    <Folder Include="objetosdao\" />
+    <Folder Include="objetosgui\" />
+    <Folder Include="objetos\" />
+  </ItemGroup>
+  <Import Project="$(PythonBinPath)\SharpDevelop.Build.Python.targets" />
+</Project>

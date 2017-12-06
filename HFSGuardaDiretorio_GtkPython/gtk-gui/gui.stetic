@@ -1,0 +1,1362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/HFSGuardaDiretorio.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="HFSGuardaDiretorio.gui.FrmPrincipal" design-size="900 561">
+    <action-group name="Default">
+      <action id="AbaAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Aba</property>
+        <property name="ShortLabel" translatable="yes">Aba</property>
+      </action>
+      <action id="DiretorioAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Diretório</property>
+        <property name="ShortLabel" translatable="yes">Diretório</property>
+      </action>
+      <action id="VisaoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Visão</property>
+        <property name="ShortLabel" translatable="yes">Visão</property>
+      </action>
+      <action id="SobreAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Sobre</property>
+        <property name="ShortLabel" translatable="yes">Sobre</property>
+      </action>
+      <action id="IncluirNovaAbaAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Incluir Nova Aba</property>
+        <property name="ShortLabel" translatable="yes">Incluir Nova Aba</property>
+        <signal name="Activated" handler="OnIncluirNovaAbaActionActivated" />
+      </action>
+      <action id="AlterarNomeDaAbaAtivaAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Alterar Nome da Aba Ativa</property>
+        <property name="ShortLabel" translatable="yes">Alterar Nome da Aba Ativa</property>
+        <signal name="Activated" handler="OnAlterarNomeDaAbaAtivaActionActivated" />
+      </action>
+      <action id="ExcluirAbaAtivaAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Excluir Aba Ativa</property>
+        <property name="ShortLabel" translatable="yes">Excluir Aba Ativa</property>
+        <signal name="Activated" handler="OnExcluirAbaAtivaActionActivated" />
+      </action>
+      <action id="ImportarDiretorioAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Importar Diretório</property>
+        <property name="ShortLabel" translatable="yes">Importar Diretório</property>
+        <signal name="Activated" handler="OnImportarDiretorioActionActivated" />
+      </action>
+      <action id="ImportarSubDiretoriosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Importar SubDiretórios</property>
+        <property name="ShortLabel" translatable="yes">Importar SubDiretórios</property>
+        <signal name="Activated" handler="OnImportarSubDiretoriosActionActivated" />
+      </action>
+      <action id="CompararDiretoriosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Comparar Diretórios</property>
+        <property name="ShortLabel" translatable="yes">Comparar Diretórios</property>
+        <signal name="Activated" handler="OnCompararDiretoriosActionActivated" />
+      </action>
+      <action id="CadastrarExtensaoDeArquivoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Cadastrar Extensão de Arquivo</property>
+        <property name="ShortLabel" translatable="yes">Cadastrar Extensão de Arquivo</property>
+        <signal name="Activated" handler="OnCadastrarExtensaoDeArquivoActionActivated" />
+      </action>
+      <action id="Action">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">-</property>
+        <property name="ShortLabel" translatable="yes">-</property>
+      </action>
+      <action id="ExpandirDiretoriosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Expandir Diretórios</property>
+        <property name="ShortLabel" translatable="yes">Expandir Diretórios</property>
+        <signal name="Activated" handler="OnExpandirDiretoriosActionActivated" />
+      </action>
+      <action id="ColapsarDiretoriosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Colapsar Diretórios</property>
+        <property name="ShortLabel" translatable="yes">Colapsar Diretórios</property>
+        <signal name="Activated" handler="OnColapsarDiretoriosActionActivated" />
+      </action>
+      <action id="ExportarDiretoriosDaAbaAtivaAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Exportar Diretórios da Aba Ativa</property>
+        <property name="ShortLabel" translatable="yes">Exportar Diretórios da Aba Ativa</property>
+      </action>
+      <action id="ImportarDiretoriosViaXMLAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Importar Diretórios via XML</property>
+        <property name="ShortLabel" translatable="yes">Importar Diretórios via XML</property>
+        <signal name="Activated" handler="OnImportarDiretoriosViaXMLActionActivated" />
+      </action>
+      <action id="GravarLogDaImportacaoAction">
+        <property name="Type">Toggle</property>
+        <property name="Label" translatable="yes">Gravar Log da Importação</property>
+        <property name="ShortLabel" translatable="yes">Gravar Log da Importação</property>
+        <property name="DrawAsRadio">False</property>
+        <property name="Active">False</property>
+      </action>
+      <action id="TXTAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">TXT</property>
+        <property name="ShortLabel" translatable="yes">TXT</property>
+      </action>
+      <action id="TXTAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">TXT</property>
+        <property name="ShortLabel" translatable="yes">TXT</property>
+        <signal name="Activated" handler="OnTXTAction1Activated" />
+      </action>
+      <action id="CSVAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">CSV</property>
+        <property name="ShortLabel" translatable="yes">CSV</property>
+        <signal name="Activated" handler="OnCSVActionActivated" />
+      </action>
+      <action id="HTMLAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">HTML</property>
+        <property name="ShortLabel" translatable="yes">HTML</property>
+        <signal name="Activated" handler="OnHTMLActionActivated" />
+      </action>
+      <action id="XMLAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">XML</property>
+        <property name="ShortLabel" translatable="yes">XML</property>
+        <signal name="Activated" handler="OnXMLActionActivated" />
+      </action>
+      <action id="SQLAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">SQL</property>
+        <property name="ShortLabel" translatable="yes">SQL</property>
+        <signal name="Activated" handler="OnSQLActionActivated" />
+      </action>
+      <action id="MostrarOcultarArvoreDirAbaAtivaAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Mostrar/Ocultar árvore de diretórios da Aba Ativa</property>
+        <property name="ShortLabel" translatable="yes">Mostrar/Ocultar árvore de diretórios da Aba Ativa</property>
+        <signal name="Activated" handler="OnMostrarOcultarArvoreDirAbaAtivaActionActivated" />
+      </action>
+      <action id="MostrarOcultarListaItensPesquisadosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Mostrar/Ocultar lista de itens pesquisados</property>
+        <property name="ShortLabel" translatable="yes">Mostrar/Ocultar lista de itens pesquisados</property>
+        <signal name="Activated" handler="OnMostrarOcultarListaItensPesquisadosActionActivated" />
+      </action>
+      <action id="SobreOCatalogadorAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Sobre o Catalogador</property>
+        <property name="ShortLabel" translatable="yes">Sobre o Catalogador</property>
+        <signal name="Activated" handler="OnSobreOCatalogadorActionActivated" />
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="WidthRequest">900</property>
+    <property name="HeightRequest">500</property>
+    <property name="Title" translatable="yes">HFSGuardaDiretorio 2.0 - Catalogador de Diretórios</property>
+    <property name="WindowPosition">Center</property>
+    <property name="DefaultWidth">900</property>
+    <property name="DefaultHeight">500</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.VBox" id="vbox1">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.MenuBar" id="barraMenu">
+            <property name="MemberName" />
+            <node name="barraMenu" type="Menubar">
+              <node type="Menu" action="AbaAction">
+                <node type="Menuitem" action="IncluirNovaAbaAction" />
+                <node type="Menuitem" action="AlterarNomeDaAbaAtivaAction" />
+                <node type="Menuitem" action="ExcluirAbaAtivaAction" />
+              </node>
+              <node type="Menu" action="DiretorioAction">
+                <node type="Menuitem" action="ImportarDiretorioAction" />
+                <node type="Menuitem" action="ImportarSubDiretoriosAction" />
+                <node type="Menuitem" action="CompararDiretoriosAction" />
+                <node type="Menuitem" action="CadastrarExtensaoDeArquivoAction" />
+                <node type="Separator" />
+                <node type="Menuitem" action="ExpandirDiretoriosAction" />
+                <node type="Menuitem" action="ColapsarDiretoriosAction" />
+                <node type="Menu" action="ExportarDiretoriosDaAbaAtivaAction">
+                  <node type="Menuitem" action="TXTAction1" />
+                  <node type="Menuitem" action="CSVAction" />
+                  <node type="Menuitem" action="HTMLAction" />
+                  <node type="Menuitem" action="XMLAction" />
+                  <node type="Menuitem" action="SQLAction" />
+                </node>
+                <node type="Menuitem" action="ImportarDiretoriosViaXMLAction" />
+                <node type="Menuitem" action="GravarLogDaImportacaoAction" />
+              </node>
+              <node type="Menu" action="VisaoAction">
+                <node type="Menuitem" action="MostrarOcultarArvoreDirAbaAtivaAction" />
+                <node type="Menuitem" action="MostrarOcultarListaItensPesquisadosAction" />
+              </node>
+              <node type="Menu" action="SobreAction">
+                <node type="Menuitem" action="SobreOCatalogadorAction" />
+              </node>
+            </node>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HBox" id="hbox1">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Button" id="btnImportarDiretorio">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Importar Diretório</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnBtnImportarDiretorioClicked" />
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ProgressBar" id="pb">
+                <property name="MemberName" />
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="edtPesquisa">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="MaxLength">255</property>
+                <property name="InvisibleChar">●</property>
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="btnPesquisa">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Pesquisar</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnBtnPesquisaClicked" />
+              </widget>
+              <packing>
+                <property name="Position">3</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.VPaned" id="spPesquisa">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Position">1</property>
+            <child>
+              <widget class="Gtk.Notebook" id="notebook1">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="CurrentPage">0</property>
+                <property name="Scrollable">True</property>
+                <child>
+                  <widget class="Gtk.HPaned" id="sp">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Position">1</property>
+                    <child>
+                      <widget class="Gtk.ScrolledWindow" id="scrollArvore">
+                        <property name="MemberName" />
+                        <property name="ShadowType">In</property>
+                        <child>
+                          <widget class="Gtk.TreeView" id="arvoreFixa">
+                            <property name="MemberName" />
+                            <property name="CanFocus">True</property>
+                            <property name="ShowScrollbars">True</property>
+                            <signal name="RowExpanded" handler="OnArvoreFixaRowExpanded" />
+                            <signal name="RowCollapsed" handler="OnArvoreFixaRowCollapsed" />
+                            <signal name="ButtonReleaseEvent" handler="OnArvoreFixaButtonReleaseEvent" />
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="Resize">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.ScrolledWindow" id="scrollTabelaFixa">
+                        <property name="MemberName" />
+                        <property name="ShadowType">In</property>
+                        <child>
+                          <widget class="Gtk.NodeView" id="tabelaFixa">
+                            <property name="MemberName" />
+                            <property name="CanFocus">True</property>
+                            <property name="ShowScrollbars">True</property>
+                            <signal name="RowActivated" handler="OnTabelaFixaRowActivated" />
+                            <signal name="ButtonReleaseEvent" handler="OnTabelaFixaButtonReleaseEvent" />
+                          </widget>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="labAbaFixa">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">DISCO1</property>
+                  </widget>
+                  <packing>
+                    <property name="type">tab</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Resize">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ScrolledWindow" id="scrollPesquisa">
+                <property name="MemberName" />
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.NodeView" id="tabelaPesquisa">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShowScrollbars">True</property>
+                    <signal name="ButtonReleaseEvent" handler="OnTabelaPesquisaButtonReleaseEvent" />
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HBox" id="hbox2">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Statusbar" id="barraStatus1">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <property name="HasResizeGrip">False</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">False</property>
+                <property name="Expand">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Statusbar" id="barraStatus2">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">3</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="HFSGuardaDiretorio.gui.FrmCadExtensao" design-size="400 418">
+    <action-group name="Default">
+      <action id="ExtensaoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Extensão</property>
+        <property name="ShortLabel" translatable="yes">Extensão</property>
+      </action>
+      <action id="IncluirExtensoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Incluir Extensão</property>
+        <property name="ShortLabel" translatable="yes">Incluir Extensão</property>
+        <signal name="Activated" handler="OnIncluirExtensaoActionActivated" />
+      </action>
+      <action id="ExcluirExtensaoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Excluir Extensão</property>
+        <property name="ShortLabel" translatable="yes">Excluir Extensão</property>
+        <signal name="Activated" handler="OnExcluirExtensaoActionActivated" />
+      </action>
+      <action id="ExcluirTodasExtensoesAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Excluir Todas Extensões</property>
+        <property name="ShortLabel" translatable="yes">Excluir Todas Extensões</property>
+        <signal name="Activated" handler="OnExcluirTodasExtensoesActionActivated" />
+      </action>
+      <action id="ExportarTodosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Exportar Todos</property>
+        <property name="ShortLabel" translatable="yes">Exportar Todos</property>
+      </action>
+      <action id="ExportarParaBitmapAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Exportar para Bitmap</property>
+        <property name="ShortLabel" translatable="yes">Exportar para Bitmap</property>
+        <signal name="Activated" handler="OnExportarParaBitmapActionActivated" />
+      </action>
+      <action id="ExportarParaIConeAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Exportar para Ícone</property>
+        <property name="ShortLabel" translatable="yes">Exportar para Ícone</property>
+        <signal name="Activated" handler="OnExportarParaIConeActionActivated" />
+      </action>
+      <action id="ExportarParaGIFAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Exportar para GIF</property>
+        <property name="ShortLabel" translatable="yes">Exportar para GIF</property>
+        <signal name="Activated" handler="OnExportarParaGIFActionActivated" />
+      </action>
+      <action id="ExportarParaJPEGAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Exportar para JPEG</property>
+        <property name="ShortLabel" translatable="yes">Exportar para JPEG</property>
+        <signal name="Activated" handler="OnExportarParaJPEGActionActivated" />
+      </action>
+      <action id="ExportarParaPNGAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Exportar para PNG</property>
+        <property name="ShortLabel" translatable="yes">Exportar para PNG</property>
+        <signal name="Activated" handler="OnExportarParaPNGActionActivated" />
+      </action>
+      <action id="ExportarParaTIFFAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Exportar para TIFF</property>
+        <property name="ShortLabel" translatable="yes">Exportar para TIFF</property>
+        <signal name="Activated" handler="OnExportarParaTIFFActionActivated" />
+      </action>
+      <action id="ImportarTodosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Importar Todos</property>
+        <property name="ShortLabel" translatable="yes">Importar Todos</property>
+      </action>
+      <action id="ImportarIconesDosArquivosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Importar Ícones dos Arquivos</property>
+        <property name="ShortLabel" translatable="yes">Importar Ícones dos Arquivos</property>
+        <signal name="Activated" handler="OnImportarIconesDosArquivosActionActivated" />
+      </action>
+      <action id="ExtrairIconesDosArquivosAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Extrair Ícones dos Arquivos</property>
+        <property name="ShortLabel" translatable="yes">Extrair Ícones dos Arquivos</property>
+        <signal name="Activated" handler="OnExtrairIconesDosArquivosActionActivated" />
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="WidthRequest">286</property>
+    <property name="HeightRequest">418</property>
+    <property name="Title" translatable="yes">Cadastro de Extensão de Arquivo</property>
+    <property name="WindowPosition">Center</property>
+    <property name="Modal">True</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="Buttons">2</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <widget class="Gtk.VBox" id="vbox3">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.MenuBar" id="menubar1">
+                <property name="MemberName" />
+                <node name="menubar1" type="Menubar">
+                  <node type="Menu" action="ExtensaoAction">
+                    <node type="Menuitem" action="IncluirExtensoAction" />
+                    <node type="Menuitem" action="ExcluirExtensaoAction" />
+                    <node type="Menuitem" action="ExcluirTodasExtensoesAction" />
+                  </node>
+                  <node type="Menu" action="ExportarTodosAction">
+                    <node type="Menuitem" action="ExportarParaBitmapAction" />
+                    <node type="Menuitem" action="ExportarParaIConeAction" />
+                    <node type="Menuitem" action="ExportarParaGIFAction" />
+                    <node type="Menuitem" action="ExportarParaJPEGAction" />
+                    <node type="Menuitem" action="ExportarParaPNGAction" />
+                    <node type="Menuitem" action="ExportarParaTIFFAction" />
+                  </node>
+                  <node type="Menu" action="ImportarTodosAction">
+                    <node type="Menuitem" action="ImportarIconesDosArquivosAction" />
+                    <node type="Menuitem" action="ExtrairIconesDosArquivosAction" />
+                  </node>
+                </node>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+                <property name="MemberName" />
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.NodeView" id="tabelaExtensao">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShowScrollbars">True</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">2</property>
+        <property name="LayoutStyle">Spread</property>
+        <child>
+          <widget class="Gtk.Button" id="btnIncluir">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">_Incluir</property>
+            <property name="UseUnderline">True</property>
+            <property name="ResponseId">0</property>
+            <signal name="Clicked" handler="OnBtnIncluirClicked" />
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="btnExcluir">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">_Excluir</property>
+            <property name="UseUnderline">True</property>
+            <property name="ResponseId">0</property>
+            <signal name="Clicked" handler="OnBtnExcluirClicked" />
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="HFSGuardaDiretorio.gui.FrmInfoDiretorio" design-size="400 372">
+    <property name="MemberName" />
+    <property name="WidthRequest">369</property>
+    <property name="HeightRequest">372</property>
+    <property name="Title" translatable="yes">Informações do Diretório / Arquivo</property>
+    <property name="WindowPosition">Center</property>
+    <property name="Modal">True</property>
+    <property name="Buttons">1</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <widget class="Gtk.VBox" id="vbox4">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Frame" id="frame1">
+                <property name="MemberName" />
+                <child>
+                  <widget class="Gtk.Alignment" id="GtkAlignment1">
+                    <property name="MemberName" />
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LeftPadding">12</property>
+                    <child>
+                      <widget class="Gtk.Table" id="table1">
+                        <property name="MemberName" />
+                        <property name="NRows">3</property>
+                        <property name="NColumns">2</property>
+                        <property name="Homogeneous">True</property>
+                        <property name="RowSpacing">6</property>
+                        <property name="ColumnSpacing">6</property>
+                        <child>
+                          <widget class="Gtk.Label" id="label1">
+                            <property name="MemberName" />
+                            <property name="LabelProp" translatable="yes">[ARQ] - Arquivo comum</property>
+                          </widget>
+                          <packing>
+                            <property name="AutoSize">True</property>
+                            <property name="XOptions">Fill</property>
+                            <property name="YOptions">Fill</property>
+                            <property name="XExpand">False</property>
+                            <property name="XFill">True</property>
+                            <property name="XShrink">False</property>
+                            <property name="YExpand">False</property>
+                            <property name="YFill">True</property>
+                            <property name="YShrink">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.Label" id="label2">
+                            <property name="MemberName" />
+                            <property name="LabelProp" translatable="yes">[DIR] - Diretório</property>
+                          </widget>
+                          <packing>
+                            <property name="LeftAttach">1</property>
+                            <property name="RightAttach">2</property>
+                            <property name="AutoSize">True</property>
+                            <property name="XOptions">Fill</property>
+                            <property name="YOptions">Fill</property>
+                            <property name="XExpand">False</property>
+                            <property name="XFill">True</property>
+                            <property name="XShrink">False</property>
+                            <property name="YExpand">False</property>
+                            <property name="YFill">True</property>
+                            <property name="YShrink">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.Label" id="label3">
+                            <property name="MemberName" />
+                            <property name="LabelProp" translatable="yes">[HID] - Arquivo Oculto</property>
+                          </widget>
+                          <packing>
+                            <property name="TopAttach">1</property>
+                            <property name="BottomAttach">2</property>
+                            <property name="AutoSize">True</property>
+                            <property name="XOptions">Fill</property>
+                            <property name="YOptions">Fill</property>
+                            <property name="XExpand">False</property>
+                            <property name="XFill">True</property>
+                            <property name="XShrink">False</property>
+                            <property name="YExpand">False</property>
+                            <property name="YFill">True</property>
+                            <property name="YShrink">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.Label" id="label4">
+                            <property name="MemberName" />
+                            <property name="LabelProp" translatable="yes">[VOL] - Volume ID</property>
+                          </widget>
+                          <packing>
+                            <property name="TopAttach">1</property>
+                            <property name="BottomAttach">2</property>
+                            <property name="LeftAttach">1</property>
+                            <property name="RightAttach">2</property>
+                            <property name="AutoSize">True</property>
+                            <property name="XOptions">Fill</property>
+                            <property name="YOptions">Fill</property>
+                            <property name="XExpand">False</property>
+                            <property name="XFill">True</property>
+                            <property name="XShrink">False</property>
+                            <property name="YExpand">False</property>
+                            <property name="YFill">True</property>
+                            <property name="YShrink">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.Label" id="label5">
+                            <property name="MemberName" />
+                            <property name="LabelProp" translatable="yes">[SYS] - Arquivo de Sistema</property>
+                          </widget>
+                          <packing>
+                            <property name="TopAttach">2</property>
+                            <property name="BottomAttach">3</property>
+                            <property name="AutoSize">True</property>
+                            <property name="XOptions">Fill</property>
+                            <property name="YOptions">Fill</property>
+                            <property name="XExpand">False</property>
+                            <property name="XFill">True</property>
+                            <property name="XShrink">False</property>
+                            <property name="YExpand">False</property>
+                            <property name="YFill">True</property>
+                            <property name="YShrink">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.Label" id="label6">
+                            <property name="MemberName" />
+                            <property name="LabelProp" translatable="yes">[ROL] - Arquivo Somente Leitura</property>
+                          </widget>
+                          <packing>
+                            <property name="TopAttach">2</property>
+                            <property name="BottomAttach">3</property>
+                            <property name="LeftAttach">1</property>
+                            <property name="RightAttach">2</property>
+                            <property name="AutoSize">True</property>
+                            <property name="XOptions">Fill</property>
+                            <property name="YOptions">Fill</property>
+                            <property name="XExpand">False</property>
+                            <property name="XFill">True</property>
+                            <property name="XShrink">False</property>
+                            <property name="YExpand">False</property>
+                            <property name="YFill">True</property>
+                            <property name="YShrink">False</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="GtkLabel1">
+                    <property name="MemberName" />
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="type">label_item</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+                <property name="MemberName" />
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.NodeView" id="tabelaInfo">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShowScrollbars">True</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">1</property>
+        <property name="LayoutStyle">Spread</property>
+        <child>
+          <widget class="Gtk.Button" id="btnOk">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-ok</property>
+            <property name="ResponseId">-5</property>
+            <signal name="Clicked" handler="OnBtnOkClicked" />
+            <property name="label">gtk-ok</property>
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="HFSGuardaDiretorio.gui.FrmSobre" design-size="338 167">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Sobre o Catalogador</property>
+    <property name="WindowPosition">Center</property>
+    <property name="Modal">True</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="DefaultWidth">300</property>
+    <property name="DefaultHeight">150</property>
+    <property name="Buttons">1</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <widget class="Gtk.VBox" id="vbox2">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Label" id="label1">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">HFSGuardaDir 2.0 - Catalogador de Diretórios</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label2">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Desenvolvido em C# com GTK#, Versão: 2.0</property>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label3">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Por Henrique Figueiredo de Souza</property>
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label4">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Todos os direitos reservados, 2014</property>
+              </widget>
+              <packing>
+                <property name="Position">3</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">1</property>
+        <property name="LayoutStyle">Spread</property>
+        <child>
+          <widget class="Gtk.Button" id="buttonOk">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-ok</property>
+            <property name="ResponseId">-5</property>
+            <signal name="Clicked" handler="OnButtonOkClicked" />
+            <property name="label">gtk-ok</property>
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="HFSGuardaDiretorio.gui.FrmSplash" design-size="400 106">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">FrmSplash</property>
+    <property name="TypeHint">Splashscreen</property>
+    <property name="WindowPosition">CenterAlways</property>
+    <property name="Modal">True</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="DefaultWidth">375</property>
+    <property name="DefaultHeight">113</property>
+    <property name="Decorated">False</property>
+    <child>
+      <widget class="Gtk.VBox" id="vbox2">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <property name="BorderWidth">1</property>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">HFSGuardaDiretorio 2.0</property>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Catalogador de Diretórios</property>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ProgressBar" id="pb">
+            <property name="MemberName" />
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="HFSGuardaDiretorio.gui.FrmCompararDiretorio" design-size="693 608">
+    <property name="MemberName" />
+    <property name="WidthRequest">693</property>
+    <property name="HeightRequest">608</property>
+    <property name="Title" translatable="yes">Comparar Diretórios</property>
+    <property name="TypeHint">Dialog</property>
+    <property name="WindowPosition">Center</property>
+    <property name="Modal">True</property>
+    <property name="AllowGrow">False</property>
+    <child>
+      <widget class="Gtk.VBox" id="vbox3">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.HBox" id="hbox1">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Button" id="btnCompararDiretorios">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Comparar Diretórios</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnBtnCompararDiretoriosClicked" />
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ProgressBar" id="pb">
+                <property name="MemberName" />
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="btnSalvarLog">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Salvar Log</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnBtnSalvarLogClicked" />
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HBox" id="hbox2">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Frame" id="frame1">
+                <property name="MemberName" />
+                <property name="ShadowType">None</property>
+                <child>
+                  <widget class="Gtk.Alignment" id="GtkAlignment">
+                    <property name="MemberName" />
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LeftPadding">12</property>
+                    <child>
+                      <widget class="Gtk.VBox" id="vbox4">
+                        <property name="MemberName" />
+                        <property name="Spacing">6</property>
+                        <child>
+                          <widget class="Gtk.ComboBox" id="cmbAba1">
+                            <property name="MemberName" />
+                            <property name="IsTextCombo">True</property>
+                            <property name="Items" translatable="yes" />
+                            <signal name="Changed" handler="OnCmbAba1Changed" />
+                          </widget>
+                          <packing>
+                            <property name="Position">0</property>
+                            <property name="AutoSize">True</property>
+                            <property name="Expand">False</property>
+                            <property name="Fill">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+                            <property name="MemberName" />
+                            <property name="ShadowType">In</property>
+                            <child>
+                              <widget class="Gtk.TreeView" id="tvDiretorio1">
+                                <property name="MemberName" />
+                                <property name="CanFocus">True</property>
+                                <property name="ShowScrollbars">True</property>
+                              </widget>
+                            </child>
+                          </widget>
+                          <packing>
+                            <property name="Position">1</property>
+                            <property name="AutoSize">True</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="GtkLabel2">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">&lt;b&gt;Diretório 1&lt;/b&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="type">label_item</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Frame" id="frame2">
+                <property name="MemberName" />
+                <property name="ShadowType">None</property>
+                <child>
+                  <widget class="Gtk.Alignment" id="GtkAlignment1">
+                    <property name="MemberName" />
+                    <property name="Xalign">0</property>
+                    <property name="Yalign">0</property>
+                    <property name="LeftPadding">12</property>
+                    <child>
+                      <widget class="Gtk.VBox" id="vbox5">
+                        <property name="MemberName" />
+                        <property name="Spacing">6</property>
+                        <child>
+                          <widget class="Gtk.ComboBox" id="cmbAba2">
+                            <property name="MemberName" />
+                            <property name="IsTextCombo">True</property>
+                            <property name="Items" translatable="yes" />
+                            <signal name="Changed" handler="OnCmbAba2Changed" />
+                          </widget>
+                          <packing>
+                            <property name="Position">0</property>
+                            <property name="AutoSize">True</property>
+                            <property name="Expand">False</property>
+                            <property name="Fill">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+                            <property name="MemberName" />
+                            <property name="ShadowType">In</property>
+                            <child>
+                              <widget class="Gtk.TreeView" id="tvDiretorio2">
+                                <property name="MemberName" />
+                                <property name="CanFocus">True</property>
+                                <property name="ShowScrollbars">True</property>
+                              </widget>
+                            </child>
+                          </widget>
+                          <packing>
+                            <property name="Position">1</property>
+                            <property name="AutoSize">True</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="GtkLabel3">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">&lt;b&gt;Diretório 2&lt;/b&gt;</property>
+                    <property name="UseMarkup">True</property>
+                  </widget>
+                  <packing>
+                    <property name="type">label_item</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HBox" id="hbox3">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Label" id="labDiferencasEncontradas">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Diferenças Encontradas</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder />
+            </child>
+            <child>
+              <placeholder />
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow2">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.NodeView" id="tabelaCompara">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">3</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HBox" id="hbox4">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Statusbar" id="barraStatus1">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <property name="HasResizeGrip">False</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Statusbar" id="barraStatus2">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="PackType">End</property>
+            <property name="Position">4</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="HFSGuardaDiretorio.gui.FrmImportarDiretorio" design-size="895 572">
+    <property name="MemberName" />
+    <property name="WidthRequest">895</property>
+    <property name="HeightRequest">572</property>
+    <property name="Title" translatable="yes">Importando Diretório</property>
+    <property name="TypeHint">Splashscreen</property>
+    <property name="WindowPosition">Center</property>
+    <property name="Modal">True</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <signal name="Shown" handler="OnShown" />
+    <child>
+      <widget class="Gtk.VBox" id="vbox1">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="memoImportaDir">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Editable">False</property>
+                <property name="CursorVisible">False</property>
+                <property name="AcceptsTab">False</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ProgressBar" id="pbImportar">
+            <property name="MemberName" />
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HBox" id="hbox3">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Statusbar" id="barraStatus1">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <property name="HasResizeGrip">False</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">False</property>
+                <property name="Expand">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Statusbar" id="barraStatus2">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
