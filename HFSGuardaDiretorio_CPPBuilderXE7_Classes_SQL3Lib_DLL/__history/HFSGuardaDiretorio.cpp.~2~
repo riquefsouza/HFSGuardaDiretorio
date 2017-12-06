@@ -1,0 +1,45 @@
+// ---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+#include <tchar.h>
+#include "Splash.h"
+// ---------------------------------------------------------------------------
+USEFORM("ImportarDiretorio.cpp", FrmImportarDiretorio);
+USEFORM("InfoDiretorio.cpp", Form1);
+USEFORM("Splash.cpp", FrmSplash);
+USEFORM("Sobre.cpp", FrmSobre);
+USEFORM("Principal.cpp", FrmPrincipal);
+USEFORM("CompararDiretorio.cpp", FrmCompararDiretorio);
+USEFORM("DataModule.cpp", dm); /* TDataModule: File Type */
+USEFORM("CadExtensao.cpp", FrmCadExtensao);
+USEFORM("EscolherDir.cpp", FrmEscolherDir);
+//---------------------------------------------------------------------------
+int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int) {
+	try {
+		Application->Initialize();
+		Application->MainFormOnTaskBar = true;
+
+		// Application->CreateForm(__classid(TFrmSplash), &FrmSplash);
+		FrmSplash = new TFrmSplash(Application);
+		FrmSplash->Show();
+		FrmSplash->Update();
+
+		Application->CreateForm(__classid(TFrmPrincipal), &FrmPrincipal);
+		Application->CreateForm(__classid(Tdm), &dm);
+		Application->Run();
+	}
+	catch (Exception &exception) {
+		Application->ShowException(&exception);
+	}
+	catch (...) {
+		try {
+			throw Exception("");
+		}
+		catch (Exception &exception) {
+			Application->ShowException(&exception);
+		}
+	}
+	return 0;
+}
+// ---------------------------------------------------------------------------
