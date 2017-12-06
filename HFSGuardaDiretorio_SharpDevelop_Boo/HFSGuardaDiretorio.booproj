@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{333F58D8-C1E2-47E5-B696-760B122160C2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HFSGuardaDiretorio</RootNamespace>
+    <AssemblyName>HFSGuardaDiretorio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <NoWin32Manifest>False</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\SQLite\SQLiteNET\dinamico\sqlite-netFx40-binary-Win32-2010-1.0.97.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="catalogador\Catalogador.boo" />
+    <Compile Include="catalogador\RotuloRaiz.boo" />
+    <Compile Include="comum\ArquivoLog.boo" />
+    <Compile Include="comum\DiretorioXML.boo" />
+    <Compile Include="comum\ICatalogador.boo" />
+    <Compile Include="comum\IProgressoLog.boo" />
+    <Compile Include="comum\Log.boo" />
+    <Compile Include="comum\Progresso.boo" />
+    <Compile Include="comum\Rotinas.boo" />
+    <Compile Include="comum\StringList.boo" />
+    <Compile Include="comum\TipoExportar.boo" />
+    <Compile Include="comum\TipoExportarExtensao.boo" />
+    <Compile Include="gui\FrmCadExtensao.boo" />
+    <Compile Include="gui\FrmCadExtensao.Designer.boo">
+      <DependentUpon>FrmCadExtensao.boo</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmCompararDiretorio.boo" />
+    <Compile Include="gui\FrmCompararDiretorio.Designer.boo">
+      <DependentUpon>FrmCompararDiretorio.boo</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmCompararDiretorioProgresso.boo" />
+    <Compile Include="gui\FrmImportarDiretorio.boo" />
+    <Compile Include="gui\FrmImportarDiretorio.Designer.boo">
+      <DependentUpon>FrmImportarDiretorio.boo</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmImportarDiretorioProgresso.boo" />
+    <Compile Include="gui\FrmInfoDiretorio.boo" />
+    <Compile Include="gui\FrmInfoDiretorio.Designer.boo">
+      <DependentUpon>FrmInfoDiretorio.boo</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmPrincipal.boo" />
+    <Compile Include="gui\FrmPrincipal.Designer.boo">
+      <DependentUpon>FrmPrincipal.boo</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmPrincipalProgresso.boo" />
+    <Compile Include="gui\FrmSobre.boo" />
+    <Compile Include="gui\FrmSobre.Designer.boo">
+      <DependentUpon>FrmSobre.boo</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmSplash.boo" />
+    <Compile Include="gui\FrmSplash.Designer.boo">
+      <DependentUpon>FrmSplash.boo</DependentUpon>
+    </Compile>
+    <Compile Include="gui\FrmSplashProgresso.boo" />
+    <Compile Include="objetosbo\AbaBO.boo" />
+    <Compile Include="objetosbo\DiretorioBO.boo" />
+    <Compile Include="objetosbo\ExtensaoBO.boo" />
+    <Compile Include="objetosbo\ImportarBO.boo" />
+    <Compile Include="objetosdao\AbaDAO.boo" />
+    <Compile Include="objetosdao\DiretorioDAO.boo" />
+    <Compile Include="objetosdao\ExtensaoDAO.boo" />
+    <Compile Include="objetosdao\VisaoDAO.boo" />
+    <Compile Include="objetosgui\Arvore.boo" />
+    <Compile Include="objetosgui\Dialogo.boo" />
+    <Compile Include="objetosgui\Tabela.boo" />
+    <Compile Include="objetosgui\TabelaItemComparer.boo" />
+    <Compile Include="objetos\Aba.boo" />
+    <Compile Include="objetos\Arquivo.boo" />
+    <Compile Include="objetos\ConexaoParams.boo" />
+    <Compile Include="objetos\Diretorio.boo" />
+    <Compile Include="objetos\DiretorioOrdem.boo" />
+    <Compile Include="objetos\Extensao.boo" />
+    <Compile Include="objetos\Importar.boo" />
+    <Compile Include="objetos\Tipo.boo" />
+    <Compile Include="Program.boo" />
+    <Compile Include="Properties\AssemblyInfo.boo" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gui\FrmCadExtensao.resx">
+      <DependentUpon>FrmCadExtensao.boo</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmCompararDiretorio.resx">
+      <DependentUpon>FrmCompararDiretorio.boo</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmImportarDiretorio.resx">
+      <DependentUpon>FrmImportarDiretorio.boo</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmInfoDiretorio.resx">
+      <DependentUpon>FrmInfoDiretorio.boo</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.Designer.boo</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmSobre.resx">
+      <DependentUpon>FrmSobre.boo</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\FrmSplash.resx">
+      <DependentUpon>FrmSplash.boo</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="catalogador" />
+    <Folder Include="comum" />
+    <Folder Include="gui" />
+    <Folder Include="objetos" />
+    <Folder Include="objetosbo" />
+    <Folder Include="objetosdao" />
+    <Folder Include="objetosgui" />
+  </ItemGroup>
+  <Import Project="$(BooBinPath)\Boo.Microsoft.Build.targets" />
+</Project>
