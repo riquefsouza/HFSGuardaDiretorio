@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{FC4865E1-E615-4FAC-98CA-14CC9FFC1B7A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HFSGuardaDiretorio</RootNamespace>
+    <AssemblyName>HFSGuardaDiretorio</AssemblyName>
+    <MainFile>Program.rb</MainFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <DebugInfo>True</DebugInfo>
+    <StartArguments>--disable-gems -D Program.rb</StartArguments>
+    <StartWorkingDirectory>.\</StartWorkingDirectory>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files (x86)\SharpDevelop\4.4\bin\..\AddIns\BackendBindings\RubyBinding\ir.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <StartArguments>--disable-gems Program.rb</StartArguments>
+    <StartWorkingDirectory>.\</StartWorkingDirectory>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files (x86)\SharpDevelop\4.4\bin\..\AddIns\BackendBindings\RubyBinding\ir.exe</StartProgram>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronRuby">
+      <HintPath>C:\Program Files %28x86%29\SharpDevelop\4.4\bin\..\AddIns\BackendBindings\RubyBinding\IronRuby.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\SQLite\SQLiteNET\dinamico\sqlite-netFx40-binary-Win32-2010-1.0.97.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="catalogador\Catalogador.rb" />
+    <Compile Include="catalogador\RotuloRaiz.rb" />
+    <Compile Include="comum\ArquivoLog.rb" />
+    <Compile Include="comum\DiretorioXML.rb" />
+    <Compile Include="comum\ICatalogador.rb" />
+    <Compile Include="comum\IProgressoLog.rb" />
+    <Compile Include="comum\Log.rb" />
+    <Compile Include="comum\Progresso.rb" />
+    <Compile Include="comum\Rotinas.rb" />
+    <Compile Include="comum\StringList.rb" />
+    <Compile Include="comum\TipoExportar.rb" />
+    <Compile Include="comum\TipoExportarExtensao.rb" />
+    <Compile Include="gui\FrmCadExtensao.rb" />
+    <Compile Include="gui\FrmCompararDiretorio.rb" />
+    <Compile Include="gui\FrmCompararDiretorioProgresso.rb" />
+    <Compile Include="gui\FrmImportarDiretorio.rb" />
+    <Compile Include="gui\FrmImportarDiretorioProgresso.rb" />
+    <Compile Include="gui\FrmInfoDiretorio.rb" />
+    <Compile Include="gui\FrmPrincipal.rb" />
+    <Compile Include="gui\FrmPrincipalProgresso.rb" />
+    <Compile Include="gui\FrmSobre.rb" />
+    <Compile Include="gui\FrmSplash.rb" />
+    <Compile Include="gui\FrmSplashProgresso.rb" />
+    <Compile Include="objetosbo\AbaBO.rb" />
+    <Compile Include="objetosbo\DiretorioBO.rb" />
+    <Compile Include="objetosbo\ExtensaoBO.rb" />
+    <Compile Include="objetosbo\ImportarBO.rb" />
+    <Compile Include="objetosdao\AbaDAO.rb" />
+    <Compile Include="objetosdao\DiretorioDAO.rb" />
+    <Compile Include="objetosdao\ExtensaoDAO.rb" />
+    <Compile Include="objetosdao\VisaoDAO.rb" />
+    <Compile Include="objetosgui\Arvore.rb" />
+    <Compile Include="objetosgui\Dialogo.rb" />
+    <Compile Include="objetosgui\Tabela.rb" />
+    <Compile Include="objetosgui\TabelaItemComparer.rb" />
+    <Compile Include="objetos\Aba.rb" />
+    <Compile Include="objetos\Arquivo.rb" />
+    <Compile Include="objetos\ConexaoParams.rb" />
+    <Compile Include="objetos\Diretorio.rb" />
+    <Compile Include="objetos\DiretorioOrdem.rb" />
+    <Compile Include="objetos\Extensao.rb" />
+    <Compile Include="objetos\Importar.rb" />
+    <Compile Include="objetos\Tipo.rb" />
+    <Compile Include="Program.rb" />
+    <Compile Include="Properties\AssemblyInfo.rb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="catalogador" />
+    <Folder Include="comum" />
+    <Folder Include="gui" />
+    <Folder Include="objetos" />
+    <Folder Include="objetosbo" />
+    <Folder Include="objetosdao" />
+    <Folder Include="objetosgui" />
+  </ItemGroup>
+  <Target Name="Build" />
+</Project>
