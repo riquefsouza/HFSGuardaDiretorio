@@ -1,5 +1,5 @@
 # HFSGuardaDiretorio
-HFSGuardaDiretorio 2.0 - Catalogador de Diretórios
+HFSGuardaDiretorio 2.0 - Directory Cataloger
 
-- Desenvolvido inicialmente como catalogador de diretórios para buscar a localização de arquivos em HDs externos.
-- Permite salvar todos os seus diretórios no banco de dados local em SQLite.
+- Developed initially as a directory cataloger to search for the location of files on external hard drives.
+- Allows you to save all your directories to the local database in SQLite.
